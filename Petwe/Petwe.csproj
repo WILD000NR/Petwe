@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\images\**" />
+    <Content Remove="wwwroot\images\**" />
+    <EmbeddedResource Remove="wwwroot\images\**" />
+    <None Remove="wwwroot\images\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Controller\" />
+    <Folder Include="Areas\Admin\Views\" />
+    <Folder Include="Models\ViewComponents\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Domain\" />
+    <Folder Include="wwwroot\css\images\" />
+    <Folder Include="wwwroot\js\" />
+    <Folder Include="wwwroot\sass\libs\" />
+    <Folder Include="wwwroot\webfonts\" />
+  </ItemGroup>
+
+</Project>
